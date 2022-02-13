@@ -14,81 +14,22 @@
 
     <div class="game-container">
 
-
         <section class="score-board">
-            <div class="x-score bottom-border">
-                <div class="x">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.76 25.76">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <polygon class="cls-1"
-                                    points="25.76 2.68 23.09 0 12.88 10.2 2.68 0 0 2.68 10.2 12.88 0 23.09 2.68 25.76 12.88 15.56 23.09 25.76 25.76 23.09 15.56 12.88 25.76 2.68" />
-                            </g>
-                        </g>
-                    </svg></div>
 
-                <div class="score">-</div>
+            <div class="x-score">
+                <img src="./SVG/small-x.svg">
+                <p>0</p>
             </div>
+
             <div class="o-score">
-                <div class="o">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.55 29.55">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <path class="cls-1"
-                                    d="M14.77,0A14.78,14.78,0,1,0,29.55,14.77,14.79,14.79,0,0,0,14.77,0Zm0,25.76a11,11,0,1,1,11-11A11,11,0,0,1,14.77,25.76Z" />
-                            </g>
-                        </g>
-                    </svg></div>
-                <div class="score">-</div>
+                <img src="./SVG/small-o.svg">
+                <p>0</p>
             </div>
 
             <div class="game-over">Game Over</div>
-            <div class="x-turn hidden"><svg  width = 13px xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.76 25.76">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: #fff;
-                        }
-                    </style>
-                </defs>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                        <polygon class="cls-1"
-                            points="25.76 2.68 23.09 0 12.88 10.2 2.68 0 0 2.68 10.2 12.88 0 23.09 2.68 25.76 12.88 15.56 23.09 25.76 25.76 23.09 15.56 12.88 25.76 2.68" />
-                    </g>
-                </g>
-            </svg> Turn</div>
 
-            <div class="o-turn hidden"><svg width = 13px xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.55 29.55">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: #fff;
-                        }
-                    </style>
-                </defs>
-                <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                            d="M14.77,0A14.78,14.78,0,1,0,29.55,14.77,14.79,14.79,0,0,0,14.77,0Zm0,25.76a11,11,0,1,1,11-11A11,11,0,0,1,14.77,25.76Z" />
-                    </g>
-                </g>
-            </svg>  Turn</div>
-
+            <div class="x-turn hidden"> <img src="./SVG/small-x-13px.svg"> Turn</div>
+            <div class="o-turn hidden"> <img src="./SVG/small-o-13px.svg"> Turn</div>
 
             <div class="default-msg">Start game or select player</div>
 
@@ -96,54 +37,32 @@
 
         <section class="game-board">
 
-            <div class="cells-container">
-            
-                <div class="cell one top-row "> <img id="player-icons-1" src=""> </div>
-            
-                <div class="cell two top-row"> <img id="player-icons-2" src=""></div>
-            
-                <div class="cell three top-row"> <img id="player-icons-3" src=""></div>
-            
-                <div class="cell four"> <img id="player-icons-4" src=""></div>
-            
-                <div class="cell five"> <img id="player-icons-5" src=""> </div>
-            
-                <div class="cell six"> <img id="player-icons-6" src=""></div>
-            
-                <div class="cell seven bottom-row"> <img id="player-icons-7" src=""> </div>
-            
-                <div class="cell eight bottom-row"> <img id="player-icons-8" src=""></div>
-            
-                <div class="cell nine bottom-row"> <img id="player-icons-9" src=""></div>
-            
+            <div class=" cells-container">
+
+                <div class="cell one top-row "> 1<img id="player-icons-1" src=""> </div>
+
+                <div class="cell two top-row"> 2<img id="player-icons-2" src=""></div>
+
+                <div class="cell three top-row"> 3<img id="player-icons-3" src=""></div>
+
+                <div class="cell four">4 <img id="player-icons-4" src=""></div>
+
+                <div class="cell five"> 5<img id="player-icons-5" src=""> </div>
+
+                <div class="cell six"> 6<img id="player-icons-6" src=""></div>
+
+                <div class="cell seven bottom-row"> 7<img id="player-icons-7" src=""> </div>
+
+                <div class="cell eight bottom-row"> 8<img id="player-icons-8" src=""></div>
+
+                <div class="cell nine bottom-row"> 9<img id="player-icons-9" src=""></div>
+
             </div>
 
-    
-
+            <div class="x-win hidden"><img src="./SVG/x-winner.svg"></div>
+            <div class="o-win hidden"><img src="./SVG/o-winner.svg"></div>
+            <div class="draw-win hidden"><img src="./SVG/draw.svg"></div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <section class="restart">
@@ -152,41 +71,6 @@
 
         </section>
 
-
-        <div class="players">
-            <div class="player-x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.66 81.66">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #545454;
-                            }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <polygon class="cls-1"
-                                points="81.66 8.48 73.17 0 40.83 32.34 8.48 0 0 8.48 32.34 40.83 0 73.17 8.48 81.66 40.83 49.31 73.17 81.66 81.66 73.17 49.31 40.83 81.66 8.48" />
-                        </g>
-                    </g>
-                </svg></div>
-
-
-            <div class="player-o"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.66 93.66">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #fff;
-                            }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-1"
-                                d="M46.83,0A46.83,46.83,0,1,0,93.66,46.83,46.89,46.89,0,0,0,46.83,0Zm0,81.66A34.83,34.83,0,1,1,81.66,46.83,34.87,34.87,0,0,1,46.83,81.66Z" />
-                        </g>
-                    </g>
-                </svg></div>
-        </div>
     </div>
 
     <script src="./script.js"></script>
